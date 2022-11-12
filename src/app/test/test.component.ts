@@ -10,6 +10,12 @@ export class TestComponent implements OnInit {
   public name="Jonathan"
   siteUrl=window.location.href;
   myId='testId';
+  hasError=false;//or true
+  titreStyle={
+    color:'blue',
+    fontStyle:'italic',
+    fontSize:'30px'
+  };
   constructor() { }
 
 
