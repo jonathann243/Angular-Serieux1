@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestComponent implements OnInit {
 
+  public name="Jonathan"
+  siteUrl=window.location.href;
   constructor() { }
+
 
   ngOnInit(): void {
   }
-
+  getName(){
+    return "hello "+this.name;
+  }
 }
