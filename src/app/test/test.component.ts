@@ -9,6 +9,7 @@ export class TestComponent implements OnInit {
 
   public name="Jonathan"
   siteUrl=window.location.href;
+  myId='testId';
   constructor() { }
 
 
