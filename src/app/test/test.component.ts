@@ -7,21 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestComponent implements OnInit {
 
+  public buttonGenerateText = "";
   public name="Jonathan"
-  siteUrl=window.location.href;
-  myId='testId';
-  hasError=false;//or true
-  titreStyle={
-    color:'blue',
-    fontStyle:'italic',
-    fontSize:'30px'
-  };
   constructor() { }
-
-
-  ngOnInit(): void {
+    ngOnInit(): void {
   }
-  getName(){
-    return "hello "+this.name;
+
+  onClick($event: MouseEvent) {
+    console.log($event);
+    this.buttonGenerateText += "welcome to angular+ Mouse type = "+" "+$event.type+" "+$event.target;
   }
 }
