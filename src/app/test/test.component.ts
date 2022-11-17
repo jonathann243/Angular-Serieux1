@@ -13,8 +13,8 @@ export class TestComponent implements OnInit {
     ngOnInit(): void {
   }
 
-  onClick($event: MouseEvent) {
-    console.log($event);
-    this.buttonGenerateText += "welcome to angular+ Mouse type = "+" "+$event.type+" "+$event.target;
+  onClick(myInput: HTMLInputElement) {
+    //console.log(myInput);
+    console.log(myInput.value);
   }
 }
