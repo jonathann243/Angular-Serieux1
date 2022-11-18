@@ -1,12 +1,7 @@
 
-<!--Exemple of usin ng switch-->
-<div [ngSwitch]="color" >
-
-  <div *ngSwitchCase="'red'">red</div>
-  <div *ngSwitchCase="'blue'">blue</div>
-  <div *ngSwitchCase="'yellow'">yellow</div>
-  <div *ngSwitchCase="'orange'">orange</div>
-  <div *ngSwitchDefault>gray</div>
+<!--Using ngFor-->
+<div   *ngFor= "let element of color; index as i">
+<p>{{element}} {{i}}</p>
 
 </div>
 
