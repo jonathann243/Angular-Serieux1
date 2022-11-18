@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestComponent implements OnInit {
 
-  public nameModel ="ddd";
+  displayState=true;
+
   constructor() { }
     ngOnInit(): void {
   }

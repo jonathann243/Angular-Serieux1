@@ -1,7 +1,9 @@
 
-<input [(ngModel)]="nameModel" type="text" >
+<h2 *ngIf="true">Always true</h2>
+<!--usage du ng if avec if et else si vrai on afiche 1 ou alors2-->
+<h2 *ngIf="displayState; else elseState">Im the Wrost</h2>
+<ng-template #elseState>
+  <h2 >Im the best</h2>
+</ng-template>
 
-<p>{{nameModel}} </p>
-
-<button >click me</button>
 
