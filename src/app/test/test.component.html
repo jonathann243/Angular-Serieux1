@@ -1,9 +1,13 @@
 
-<h2 *ngIf="true">Always true</h2>
-<!--usage du ng if avec if et else si vrai on afiche 1 ou alors2-->
-<h2 *ngIf="displayState; else elseState">Im the Wrost</h2>
-<ng-template #elseState>
-  <h2 >Im the best</h2>
-</ng-template>
+<!--Exemple of usin ng switch-->
+<div [ngSwitch]="color" >
+
+  <div *ngSwitchCase="'red'">red</div>
+  <div *ngSwitchCase="'blue'">blue</div>
+  <div *ngSwitchCase="'yellow'">yellow</div>
+  <div *ngSwitchCase="'orange'">orange</div>
+  <div *ngSwitchDefault>gray</div>
+
+</div>
 
 

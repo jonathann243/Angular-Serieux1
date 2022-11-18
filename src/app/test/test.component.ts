@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestComponent implements OnInit {
 
-  displayState=true;
+  color="bluee";
 
   constructor() { }
     ngOnInit(): void {
