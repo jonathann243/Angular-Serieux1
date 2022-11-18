@@ -7,14 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestComponent implements OnInit {
 
-  public buttonGenerateText = "";
-  public name="Jonathan"
+  public nameModel ="ddd";
   constructor() { }
     ngOnInit(): void {
   }
 
-  onClick(myInput: HTMLInputElement) {
-    //console.log(myInput);
-    console.log(myInput.value);
-  }
+
 }
