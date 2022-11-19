@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
 // decorateur for telling complilator  this is not plane class this is conponet
 @Component({
   selector: 'app-root',  // tag html representing this component (use in index html)
@@ -6,8 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']// point css file
 })
 export class AppComponent {
-  title = 'Titre de la questisvsvsfuons';
+  title = 'Jonathan papy';
   id=45;
-  proof =45;
 
 }
