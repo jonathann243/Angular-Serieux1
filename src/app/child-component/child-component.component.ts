@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-child-component',
@@ -8,12 +8,18 @@ import {Component, Input, OnInit} from '@angular/core';
 export class ChildComponentComponent implements OnInit {
 
   //there is two way declare Input variable
-  //first on
+  //first on {{item}} in html file
   //@Input() item='';
-  //second one
+  //second one{{name}} in html file
   @Input('item') name="";
-  constructor() { }
 
+
+  @Output() childEvent=new EventEmitter();
+  fireEvent() {
+    this.childEvent.emit('Hey code evolution');
+  }
+
+  constructor() { }
   ngOnInit(): void {
   }
 

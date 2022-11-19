@@ -8,5 +8,6 @@ import { Component,Input } from '@angular/core';
 export class AppComponent {
   title = 'Jonathan papy';
   id=45;
+  message="";
 
 }
